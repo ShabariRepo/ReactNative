@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import Header from './src/components/header';
 
 // Create a component
 // JS Function
@@ -25,6 +26,7 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View>
+        <Header headerText={'Albums'} />
         <Text>{instructions}</Text>
         <Text>Welcome to React Native!</Text>
       </View>
