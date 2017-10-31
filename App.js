@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component
 // JS Function
@@ -27,6 +28,7 @@ export default class App extends Component<{}> {
     return (
       <View>
         <Header headerText={'Albums'} />
+        <AlbumList />
         <Text>{instructions}</Text>
         <Text>Welcome to React Native!</Text>
       </View>
