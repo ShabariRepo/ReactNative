@@ -16,21 +16,12 @@ import AlbumList from './src/components/AlbumList';
 
 // Create a component
 // JS Function
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-  'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-  'Shake or press menu button for dev menu',
-});
-
 export default class App extends Component<{}> {
   render() {
     return (
       <View>
         <Header headerText={'Albums'} />
         <AlbumList />
-        <Text>{instructions}</Text>
-        <Text>Welcome to React Native!</Text>
       </View>
     );
   }
